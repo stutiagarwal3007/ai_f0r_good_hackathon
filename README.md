@@ -76,5 +76,4 @@ Millions of patients around the world suffer due to **unforeseen blood shortages
 
 ---
 
-## 📂 Project Structure
 
