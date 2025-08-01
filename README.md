@@ -1,30 +1,80 @@
-# Blood shortage solution
+# 🩸 AI-Drive: Smart Blood Demand Forecasting & Donor Network
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+**AI-Drive** is an AI-powered web app that helps hospitals forecast blood demand and notifies nearby eligible donors in real-time. It uses predictive analytics, geolocation, and modern UI/UX to solve one of the most life-critical and underserved problems in public health: blood shortages and inefficient donor mobilization.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/stutiagarwal3007-1712s-projects/v0-blood-shortage-solution)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/q3lLFTfwdAj)
 
-## Overview
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+## 🧠 Problem Statement
 
-## Deployment
+Millions of patients around the world suffer due to **unforeseen blood shortages**. Hospitals lack tools to forecast demand, donors don’t know when they’re needed, and existing systems are fragmented and reactive.
 
-Your project is live at:
+---
 
-**[https://vercel.com/stutiagarwal3007-1712s-projects/v0-blood-shortage-solution](https://vercel.com/stutiagarwal3007-1712s-projects/v0-blood-shortage-solution)**
+## 🌟 Key Features
 
-## Build your app
+### 🔐 User Authentication & Onboarding
+- Role-based login via Firebase Auth (Donor / Blood Bank / Admin)
+- First-time user onboarding flow with profile setup
 
-Continue building your app on:
+### 📊 AI-Powered Forecast Dashboard
+- Real-time blood demand predictions based on mock ML data
+- Interactive charts for blood stock levels, shortage risk, and donor trends
 
-**[https://v0.dev/chat/projects/q3lLFTfwdAj](https://v0.dev/chat/projects/q3lLFTfwdAj)**
+### 🗺️ Donor Match Map
+- Google Maps API shows nearby hospitals needing blood
+- Geofenced donor notifications and real-time wait times
+- Mobile-friendly map with AR-style animations
 
-## How It Works
+### 📈 Live Data Dashboard
+- Tailored for hospitals: blood inventory, donor engagement, shortage alerts
+- Tailored for donors: donation history, eligibility, impact tracker
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+### 🧩 API Integrations
+- `Google Maps API` for hospital geolocation and routing
+- `Disease.sh API` or `OpenWeatherMap API` for outbreak/climate correlation with blood demand
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer        | Tech Used                                  |
+|--------------|---------------------------------------------|
+| Frontend     | React, Next.js, TypeScript, Tailwind CSS    |
+| Backend      | Firebase (Auth, Firestore, Hosting), Supabase (optional) |
+| APIs         | Google Maps, Disease.sh / OpenWeatherMap   |
+| Charts       | Recharts, Victory, Chart.js (customizable) |
+| Animations   | Framer Motion                               |
+| Forms        | React Hook Form + Zod                       |
+| Analytics    | Firebase Analytics or PostHog               |
+
+---
+
+## 🔐 Accessibility & UX
+
+- Fully responsive mobile-first design
+- WCAG-compliant: ARIA labels, color contrast, keyboard nav
+- Smooth user onboarding flow with visual feedback and guidance
+
+---
+
+## ⚡ Hackathon-Ready Demo Flow
+
+1. **Sign in** as a Donor or Hospital Admin
+2. **Complete your profile** (e.g., blood type, location)
+3. **View forecast dashboard** with predicted shortages
+4. **Open the map** to find nearby hospitals needing blood
+5. **Respond to alert** → confirm donation
+6. **View impact tracker**: "You saved 3 lives this week!"
+
+---
+
+## 💾 Sample Data
+
+- 5 hospitals with variable blood levels
+- 20 mock donors with diverse blood types and locations
+- 7-day regional demand forecast (mock AI output)
+
+---
+
+## 📂 Project Structure
+
